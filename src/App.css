@@ -2,10 +2,26 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
   margin: 0;
+}
+
+body {
+  margin: 0px;
   color: #DEEBF8;
   font-family: 'Inter', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -13,15 +29,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 3em;
+  padding: 3em 3em;
   background-color: #21222A;
 }
 
-.app-name {
+.nav__logo {
   display: flex;
+  align-items: center;
 }
 
-.nav-title {
+.nav__logo-text {
   color: #61DAFB;
   font-weight: 700;
   line-height: 27px;
@@ -29,12 +46,42 @@ body {
 
 }
 
-.nav-logo {
+.nav__logo-icon {
   width: 40px;
   margin-right: 0.8em;
 }
 
-.nav-label {
+.nav__title {
   font-weight: 600;
   line-height: 19px;
+}
+
+.main {
+  padding: 4em 3em;
+  background-color: #282D35;
+  color: #fff;
+  height: 100%;
+  background-image: url(./assets/react-icon-large.png);
+  background-repeat: no-repeat; 
+  background-position: right;
+
+}
+
+.main__title {
+  letter-spacing: -0.05em;
+  line-height: 47px;
+  font-weight: 700;
+  font-size: 39px;
+  margin-bottom: 1em;
+}
+
+.main__list li::marker {
+  color: #61DAFB;
+  font-size: 2rem;
+}
+
+.main__list li {
+  font-weight: 400;
+  margin-bottom: .8em;
+  max-width: 400px;
 }

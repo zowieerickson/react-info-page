@@ -6,10 +6,10 @@ import MainContent from './components/MainContent'
 function App() {
 
   return (
-    <div>
+    <>
       <Navbar />
       <MainContent />
-    </div>
+    </>
   )
 }
 

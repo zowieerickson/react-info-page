@@ -2,12 +2,12 @@ import reactLogo from '../assets/react.svg'
 
 function Navbar() {
     return (
-        <nav class="nav">
-            <div className="app-name">
-                <img src={reactLogo} className="nav-logo" alt="React logo" />
-                <h2 className="nav-title">ReactFacts</h2>
+        <nav className="nav">
+            <div className="nav__logo">
+                <img src={reactLogo} className="nav__logo-icon" alt="React logo" />
+                <h2 className="nav__logo-text">ReactFacts</h2>
             </div>
-            <h3 className="nav-label">React Course - Project 1</h3>
+            <h3 className="nav__title">React Course - Project 1</h3>
         </nav>
     )
 }
